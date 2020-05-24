@@ -1,23 +1,18 @@
 import Head from 'next/head'
+import Button from 'react-bootstrap/Button';
 
 export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Kern Elder</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+        <title>Kern Elder</title>  
 
+      </Head>
       <main>
         <h2 className="title">
-          Kern Elder
+          Kern Elder          
         </h2>
-
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-
-        
+        <Button className="btn btn-primary">Success</Button>{' '}
       </main>
 
       <footer>
