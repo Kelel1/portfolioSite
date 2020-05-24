@@ -1,5 +1,6 @@
 import Head from 'next/head'
-import Button from 'react-bootstrap/Button';
+import Button from 'react-bootstrap/Button'
+import NavBar from '../components/NavBar'
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <h2 className="title">
           Kern Elder          
         </h2>
+        <NavBar/>
         <Button className="btn btn-primary">Success</Button>{' '}
       </main>
 
