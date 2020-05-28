@@ -1,4 +1,4 @@
-import Head  from 'next/head'
+import Head   from 'next/head'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
 
@@ -10,12 +10,12 @@ const Home = () => {
         <title>Kern Elder</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <main>
-        <h3 className="kern">
-          Kern Elder          
-        </h3>       
-        <div className="intro container-fluid p-0">
-          <p>
+      <main>             
+        <div className="intro container-fluid p-0 pt-5">
+          <h1 className="kern text-center text-uppercase">
+            Kern Elder          
+          </h1>  
+          <p className="text-center">
             Hi, I am a self taught web-developer who specializes in React/NodeJS. <br/>
             However I am always learning and
             excited to share!
@@ -27,15 +27,43 @@ const Home = () => {
           </p>
 
         </div>
+        <div className="container-fluid p-0">
+          <div className="tech d-flex flex-row">
+            <p>
+              Testing
+            </p>
+          </div>
+
+        </div>
       </main>
       <Footer/>
-      <style jsx>{`
+      <style jsx>{`      
       .intro {
-        margin: auto;
-        padding: 20px;
-        width: 50%;
+        height: 800px;
+        width: 100%;
+        color: #505a70;
+        background-color: #273f56;
+        padding-top: auto;
       }
-      
+      .experience {
+        height: 800px;
+        width: 100%;
+        color: #505a70;
+        background-color: #1e1e1e;
+        //eceeef 273f56
+      }
+      .kern {
+        color: #0379ec;
+        font-size: 50px;
+      }
+
+      .tech {
+        height: 800px;
+        width: 100%;
+        color: purple;
+        background-color: #273f56;
+      }
+
       
       `}
       </style>

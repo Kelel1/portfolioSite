@@ -1,28 +1,33 @@
-import useState from 'react'
 import Link     from 'next/link'
 
 const NavBar = () => {
     return (
         <nav className="navbar navbar-expand-sm bg-dark navbar-dark sticky-top container-fluid">
 
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <Link href="/"><a class="nav-link">Kern Elder</a></Link>
+          <ul className="home navbar-nav">
+            <li className="nav-item">
+              <Link href="/"><a className="nav-link">Kern Elder</a></Link>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Software</a>
+            <li className="nav-item">
+              <a className="nav-link" href="#">Software</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
+            <li className="nav-item">
+              <a className="nav-link" href="#">Blog</a>
             </li>          
           </ul>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <Link href="/contact"><a class="nav-link">Contact</a></Link>
+          <div className="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <Link href="/contact"><a className="nav-link">Contact</a></Link>
               </li>
             </ul>          
           </div>      
+          <style jsx>{`
+            .home {
+              border-right: 1px solid #333;            
+            }
+      
+          `}</style>
       </nav>
     )
 }
