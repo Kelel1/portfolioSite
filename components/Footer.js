@@ -3,13 +3,12 @@ import Link from 'next/link'
 const Footer = () => {
     return (
         <div>
-            <footer className="a container-fluid page-footer m-0">
-              <div className="row">
-                <Link href="/"><a className="nav-link col-sm">Home</a></Link>
-                <Link href="/"><a className="nav-link col-sm" href="#">Projects</a></Link>
-                <Link href="/"><a className="nav-link col-sm" href="#">Blog</a></Link>
-                <Link href="/contact"><a className="nav-link col-sm">Contact</a></Link>
-
+            <footer className="a page-footer pt-3">
+              <div className="container-fluid row text-center">
+                <Link href="/"><a className="nav-link col-md-3">Home</a></Link>
+                <Link href="/"><a className="nav-link col-md-3" href="#">Projects</a></Link>
+                <Link href="/"><a className="nav-link col-md-3" href="#">Blog</a></Link>
+                <Link href="/contact"><a className="nav-link col-md-3">Contact</a></Link>
               </div>
               
           {/* <div className="collapse navbar-collapse justify-content-end" id="navbarCollapse">
@@ -28,6 +27,9 @@ const Footer = () => {
                 width: 100%;
                 background-color: #343a40;
                 color: white;
+              }
+              a {
+                color: gray !important;
               }
             
             
