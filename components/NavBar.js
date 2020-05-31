@@ -2,20 +2,22 @@ import Link     from 'next/link'
 
 const NavBar = () => {
     return (
-        <nav className="navbar navbar-expand-sm bg-dark navbar-dark sticky-top container-fluid">
+        <nav className="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">         
 
-          <ul className="home navbar-nav">
-            <li className="nav-item">
-              <Link href="/"><a className="nav-link">Kern Elder</a></Link>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">Projects</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">Blog</a>
-            </li>          
-          </ul>
-          <div className="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+          <div class="d-flex collapse navbar-collapse">
+            <ul className="home navbar-nav">
+              <li className="nav-item">
+                <Link href="/"><a className="nav-link">Kern Elder</a></Link>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Projects</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Blog</a>
+              </li>             
+            </ul>
+          </div>
+          <div className="justify-content-end navbar-collapse">
             <ul className="navbar-nav">
               <li className="nav-item">
                 <Link href="/contact"><a className="nav-link">Contact</a></Link>
@@ -23,9 +25,9 @@ const NavBar = () => {
             </ul>          
           </div>      
           <style jsx>{`
-            .home {
-              border-right: 1px solid #333;            
-            }
+            // .home {
+            //   border-right: 1px solid #333;            
+            // }
       
           `}</style>
       </nav>
