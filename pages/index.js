@@ -16,8 +16,8 @@ const Home = () => {
             Kern Elder          
           </h1>  
           <p className="text-center">
-            Hi, I am a self taught web-developer who specializes in React/NodeJS. <br/>
-            However I am always learning and
+            Hi, I am a self taught web-developer specializing in React/NodeJS. <br/>
+            Feel free to check out my projects or get in contact.
             excited to share!
           </p>
         </div>

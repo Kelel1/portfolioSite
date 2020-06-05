@@ -1,14 +1,17 @@
-import NavBar from '../components/NavBar'
-import Footer from '../components/Footer'
+import NavBar  from '../components/NavBar'
+import Footer  from '../components/Footer'
+import Contact from '../components/Contact'
 
-const Contact = () => {
-    return (
-        <div>
-            <NavBar/>
-            <h2>Contact</h2>
-            <Footer/>
-        </div>        
-    )
+const ContactPage = () => {
+
+  return (
+      <div>
+          <NavBar/>
+          <h2>Contact</h2>
+          <Contact/>
+          <Footer/>
+      </div>        
+  )
 }
 
-export default Contact
+export default ContactPage

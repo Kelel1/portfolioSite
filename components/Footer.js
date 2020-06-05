@@ -2,35 +2,33 @@ import Link from 'next/link'
 
 const Footer = () => {
     return (
-        <div>
-            <footer className="a page-footer pt-3">
+        <div className="a footer pt-4">            
+            <footer>
               <div className="container-fluid row text-center">
-                <Link href="/"><a className="nav-link col-md-3">Home</a></Link>
-                <Link href="/"><a className="nav-link col-md-3" href="#">Projects</a></Link>
-                <Link href="/"><a className="nav-link col-md-3" href="#">Blog</a></Link>
-                <Link href="/contact"><a className="nav-link col-md-3">Contact</a></Link>
+                <Link href="/"><a className="nav-link col-sm-3">Home</a></Link>
+                <Link href="/"><a className="nav-link col-sm-3" href="#">Projects</a></Link>
+                <Link href="/"><a className="nav-link col-sm-3" href="#">Blog</a></Link>
+                <Link href="/contact"><a className="nav-link col-sm-3">Contact</a></Link>
               </div>
-              
-          {/* <div className="collapse navbar-collapse justify-content-end" id="navbarCollapse">
-            <ul className="navbar-nav">
-              <li className="nav-item">
-                <Link href="/contact"><a className="nav-link">Contact</a></Link>
-              </li>
-            </ul>          
-          </div>    */}
+     
             </footer>
             <style jsx>{`
               .a {
+                position-fixed;
                 left: 0;
-                height: 80px;
+                bottom: 0;
+                height: 200px;
                 bottom: 0;
                 width: 100%;
                 background-color: #343a40;
                 color: white;
               }
+              
               a {
                 color: gray !important;
               }
+
+              
             
             
             `}</style>  

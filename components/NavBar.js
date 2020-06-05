@@ -4,7 +4,7 @@ const NavBar = () => {
     return (
         <nav className="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">         
 
-          <div class="d-flex collapse navbar-collapse">
+          <div className="d-flex collapse navbar-collapse">
             <ul className="home navbar-nav">
               <li className="nav-item">
                 <Link href="/"><a className="nav-link">Kern Elder</a></Link>
