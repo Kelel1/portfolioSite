@@ -81,6 +81,7 @@ const Contanct = () => {
                 <div className='column content'>
                   <h2>Contact Form</h2>
                   <form
+                    className="form-group"
                     action='https://api.staticforms.xyz/submit'
                     method='post'
                     onSubmit={handleSubmit}
@@ -89,7 +90,7 @@ const Contanct = () => {
                       <label className='label'>Your Name</label>
                       <div className='control'>
                         <input
-                          className='input'
+                          className='input form-control form-control-md'
                           type='text'
                           placeholder='Name'
                           name='name'
@@ -102,7 +103,7 @@ const Contanct = () => {
                       <label className='label'>Your Email</label>
                       <div className='control'>
                         <input
-                          className='input'
+                          className='input form-control form-control-md'
                           type='email'
                           placeholder='Email'
                           name='email'
@@ -131,7 +132,7 @@ const Contanct = () => {
                       <label className='label'>Message</label>
                       <div className='control'>
                         <textarea
-                          className='textarea'
+                          className='textarea form-control form-control-md'
                           placeholder='Your Message'
                           name='message'
                           onChange={handleChange}
@@ -141,7 +142,8 @@ const Contanct = () => {
                     </div>
                     <div className='field is-grouped'>
                       <div className='control'>
-                        <button className='button is-primary' type='submit'>
+                        <br/>
+                        <button className='btn btn-primary is-primary' type='submit'>
                           Submit
                         </button>
                       </div>
