@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const Footer = () => {
     return (
-        <div className="a footer pt-4">            
+        <div className="footer pt-5">            
             <footer>
               <div className="container-fluid row text-center">
                 <Link href="/"><a className="nav-link col-sm-3">Home</a></Link>
@@ -13,8 +13,8 @@ const Footer = () => {
      
             </footer>
             <style jsx>{`
-              .a {
-                position-fixed;
+              .footer {
+                position: absolute;
                 left: 0;
                 bottom: 0;
                 height: 200px;

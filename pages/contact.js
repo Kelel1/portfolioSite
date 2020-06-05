@@ -5,7 +5,7 @@ import Contact from '../components/Contact'
 const ContactPage = () => {
 
   return (
-      <div>
+      <div className="container-fluid p-0">
           <NavBar/>
           <Contact/>
           <Footer/>

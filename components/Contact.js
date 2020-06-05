@@ -54,7 +54,7 @@ const Contanct = () => {
     <div>
       <div className='section'>
         <div className='container'>
-          <div className='columns'>
+          <div className='form-contact columns'>
             <div className='column' />
             <div className='column  is-two-thirds'>
               <div
@@ -143,9 +143,11 @@ const Contanct = () => {
                     <div className='field is-grouped'>
                       <div className='control'>
                         <br/>
-                        <button className='btn btn-primary is-primary' type='submit'>
-                          Submit
-                        </button>
+                        <div className="text-center">
+                          <button className=' btn btn-primary is-primary' type='submit'>
+                            Submit
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </form>
@@ -156,9 +158,16 @@ const Contanct = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
-};
+      <style jsx global>{`
+      .form-contact {
+        max-width: 330px;
+        padding: 15px;
+        margin: 0 auto;
+      }
+   `}</style>
+    </div>     
+  )    
+}
 
 
 
