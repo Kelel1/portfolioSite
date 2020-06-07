@@ -2,12 +2,12 @@ import Link from 'next/link'
 
 const Footer = () => {
     return (
-        <div className="footer pt-5">            
-            <footer>
-              <div className="container-fluid row text-center">
+        <div>            
+            <footer className="footer container-fluid pt-3 pb-1" >
+              <div className="row text-center">
                 <Link href="/"><a className="nav-link col-sm-3">Home</a></Link>
-                <Link href="/"><a className="nav-link col-sm-3" href="#">Projects</a></Link>
-                <Link href="/"><a className="nav-link col-sm-3" href="#">Blog</a></Link>
+                <Link href="/"><a className="nav-link col-sm-3">Projects</a></Link>
+                <Link href="/"><a className="nav-link col-sm-3">Blog</a></Link>
                 <Link href="/contact"><a className="nav-link col-sm-3">Contact</a></Link>
               </div>
      
@@ -15,10 +15,9 @@ const Footer = () => {
             <style jsx>{`
               .footer {
                 position: absolute;
+                bottom: 0;
                 left: 0;
-                bottom: 0;
-                height: 200px;
-                bottom: 0;
+                right: 0;
                 width: 100%;
                 background-color: #343a40;
                 color: white;

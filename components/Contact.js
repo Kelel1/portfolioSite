@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Success      from './Success'
 
 const Contanct = () => {
 
@@ -12,10 +13,12 @@ const Contanct = () => {
     accessKey: 'e8c69430-f982-45a7-b8ec-cfb259097c70' // get your access key from https://www.staticforms.xyz
   })
 
+  const [submit, setSubmit] = useState(false)
+
   const [response, setResponse] = useState({
     type: '',
     message: ''
-  });
+  })
 
   const handleChange = e =>
     setContact({ ...contact, [e.target.name]: e.target.value });
@@ -27,7 +30,7 @@ const Contanct = () => {
         method: 'POST',
         body: JSON.stringify(contact),
         headers: { 'Content-Type': 'application/json' }
-      });
+      })
 
       const json = await res.json();
 
@@ -35,22 +38,24 @@ const Contanct = () => {
         setResponse({
           type: 'success',
           message: 'Thank you for reaching out to us.'
-        });
+        })
+        {setSubmit(true)}
+        {console.log(submit)}
       } else {
         setResponse({
           type: 'error',
           message: json.message
-        });
+        })
       }
     } catch (e) {
       console.log('An error occurred', e);
       setResponse({
         type: 'error',
         message: 'An error occured while submitting the form'
-      });
+      })
     }
-  };
-  return (
+  }
+  {return(!submit ?  (
     <div>
       <div className='section'>
         <div className='container'>
@@ -73,13 +78,12 @@ const Contanct = () => {
                     : 'is-hidden'
                 }
               >
-                <p>{response.message}</p>
               </div>
               <div
                 className={response.message !== '' ? 'is-hidden' : 'columns'}
               >
                 <div className='column content'>
-                  <h2>Contact Form</h2>
+                  <h2 className="text-center">Get in Contact</h2>
                   <form
                     className="form-group"
                     action='https://api.staticforms.xyz/submit'
@@ -166,7 +170,7 @@ const Contanct = () => {
       }
    `}</style>
     </div>     
-  )    
+  ) : <Success/> )}
 }
 
 
