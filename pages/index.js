@@ -1,6 +1,7 @@
 import Head   from 'next/head'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
+import Blog   from '../components/Blog'
 
 const Home = () => {
   return (
@@ -19,7 +20,7 @@ const Home = () => {
             <p className="text-center">
               Hi, I am a self taught web-developer specializing in React/NodeJS. <br/>
               Feel free to check out my projects or get in contact.
-              excited to share!
+              Also follow my blog to follow the struggles and triumps of my coding journey.
             </p>
           </div>
           <div className="experience container-fluid p-0">
@@ -90,6 +91,7 @@ const Home = () => {
       
       `}</style> */}
       <div className="footer-div">
+        <Blog/>
         <Footer/>
       </div>
     </div>
