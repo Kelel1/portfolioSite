@@ -7,7 +7,7 @@ const Footer = () => {
               <div className="row text-center">
                 <Link href="/"><a className="nav-link col-sm-3">Home</a></Link>
                 <Link href="/"><a className="nav-link col-sm-3">Projects</a></Link>
-                <Link href="/"><a className="nav-link col-sm-3">Blog</a></Link>
+                <Link href="/blogs"><a className="nav-link col-sm-3">Blog</a></Link>
                 <Link href="/contact"><a className="nav-link col-sm-3">Contact</a></Link>
               </div>
      
