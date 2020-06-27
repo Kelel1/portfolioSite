@@ -82,7 +82,7 @@ const Contanct = () => {
               <div
                 className={response.message !== '' ? 'is-hidden' : 'columns'}
               >
-                <div className='column content'>
+                <div className='column rounded-lg border-grey-700 border p-5 shadow-lg content'>
                   <h2 className="text-center">Get in Contact</h2>
                   <form
                     className="form-group"
@@ -164,8 +164,8 @@ const Contanct = () => {
       </div>
       <style jsx global>{`
       .form-contact {
-        max-width: 330px;
-        padding: 15px;
+        max-width: 100%;
+        // padding: 15px;
         margin: 0 auto;
       }
    `}</style>

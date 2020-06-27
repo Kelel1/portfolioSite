@@ -1,39 +1,59 @@
 import Head   from 'next/head'
+import { Button } from 'react-bootstrap/'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
-import Blog   from '../components/Blog'
+import FadeIn from 'react-fade-in'
+import Zoom   from 'react-reveal/Bounce'
 
 const Home = () => {
-  return (
+
+  return (      
       <div id="page-container">
-        <div className="containter-wrap container-fluid p-0">
+        <div className="container-wrap container-fluid p-0">
         <NavBar/>
         <Head>        
-          <title>Kern Elder</title>
+          <title>Name</title>
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
         <main>             
           <div className="intro container-fluid p-0 pt-5">
-            <h1 className="kern text-center text-uppercase">
-              Kern Elder          
-            </h1>  
-            <p className="text-center">
-              Hi, I am a self taught web-developer specializing in React/NodeJS. <br/>
-              Feel free to check out my projects or get in contact.
-              Also follow my blog to follow the struggles and triumps of my coding journey.
-            </p>
-          </div>
-          <div className="experience container-fluid p-0">
-            <p>
-              I have experience with React/Redux, MongoDB, Java, Jest testing, GraphQL and NodeJS/Express. 
-            </p>
+            <h1 className="name text-center text-uppercase">
+              Name          
+            </h1>      
+            <section>
+              <FadeIn>
+                <h5 className="text-center text-gray-400 text-left">
+                  Welcome! I am a full-stack developer currently looking for <br></br>
+                  internships/ entry-level positions.                 
+                </h5>
+                <div>
+                  <Button>Skills</Button> <Button>Projects</Button>
+                </div>
+              </FadeIn>
 
+            </section>      
           </div>
+          <section>            
+            <div className="experience container-fluid p-0">
+            <Zoom>
+            <h3>
+              My ever-growing skillset includes:
+            </h3>
+            </Zoom>
+            <ul>
+              <Zoom>
+                <li>
+                  GraphQl                  
+                </li>                
+              </Zoom>                          
+            </ul>           
+          </div>
+          </section>
           <div className="container-fluid p-0">
-            <div className="tech d-flex flex-row">
-              <p>
-                Testing
-              </p>
+            <div className="projects d-flex flex-row">
+              <h3>
+                Projects
+              </h3>
             </div>
 
           </div>
@@ -51,47 +71,46 @@ const Home = () => {
           height: 800px;
           width: 100%;
           color: #505a70;
-          background-color: #273f56;
+          background-color: #121212;
           padding-top: auto;
         }
         .experience {
           height: 800px;
           width: 100%;
-          color: #505a70;
+          // color: #505a70;
+          color: #121212;
           background-color: #1e1e1e;
           //eceeef 273f56
+        }        
+        
+        h5 {
+          color: #A2CEE0;
         }
+
+        // .about {
+        //   font-famiy: Poppins Light, Fira Sans, sans-serif;          
+        // }
        
         .kern {
           color: #0379ec;
           font-size: 50px;
+          // font-famiy: Poppins Light, Fira Sans, sans-serif;
         }
 
-        .tech {
+        title {
+          font-family: Poppins
+        }
+        .projects {
           height: 800px;
           width: 100%;
-          color: purple;
+          color: #505a70;
           background-color: #273f56;
         }
 
         
         `}
-        </style>
-      {/* <style jsx global>{`
-      // html,
-      // body {
-      //   min-height: 100vh;
-      //   position: relative;
-      //   padding-bottom: 150px;
-      //   margin: 0;
-      //   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-      //     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-      //     sans-serif;
-      // }
-      
-      `}</style> */}
+        </style>      
       <div className="footer-div">
-        <Blog/>
         <Footer/>
       </div>
     </div>

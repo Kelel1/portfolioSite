@@ -2,12 +2,12 @@ import Link     from 'next/link'
 
 const NavBar = () => {
     return (
-        <nav className="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">         
+        <nav className="navbar navbar-expand-sm sticky-top">         
 
           <div className="d-flex collapse navbar-collapse">
             <ul className="home navbar-nav">
               <li className="nav-item">
-                <Link href="/"><a className="nav-link">Kern Elder</a></Link>
+                <Link href="/"><a className="nav-link">Name</a></Link>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">Projects</a>
@@ -25,9 +25,10 @@ const NavBar = () => {
             </ul>          
           </div>      
           <style jsx>{`
-            // .home {
-            //   border-right: 1px solid #333;            
-            // }
+            .navbar {
+              background-color: #121212;
+              height: 1 em
+            }
       
           `}</style>
       </nav>
