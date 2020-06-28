@@ -27,7 +27,7 @@ const Home = () => {
                   internships/ entry-level positions.                 
                 </h5>
                 <div>
-                  <Button>Skills</Button> <Button>Projects</Button>
+                  <Button>Skills</Button>&nbsp;&nbsp;<Button>Projects</Button>
                 </div>
               </FadeIn>
 
@@ -37,7 +37,7 @@ const Home = () => {
             <div className="experience container-fluid p-0">
             <Zoom>
             <h3>
-              My ever-growing skillset includes:
+              Skills/Experience
             </h3>
             </Zoom>
             <ul>
@@ -45,24 +45,26 @@ const Home = () => {
                 <li>
                   GraphQl                  
                 </li>                
-              </Zoom>                          
+              </Zoom>                     
             </ul>           
           </div>
           </section>
-          <div className="container-fluid p-0">
-            <div className="projects d-flex flex-row">
-              <h3>
-                Projects
-              </h3>
+          <section>
+            <div className="container-fluid p-0">
+              <div className="projects d-flex flex-row">
+                <h3>
+                  Projects
+                </h3>
+              </div>
             </div>
-
-          </div>
+          </section>
         </main>
       </div>
         <style jsx>{`  
         #page-container {
           position: relative;
           min-height: 100vh;
+          background-color: #121212;
         }    
         .content-wrap {
           padding-bottom: 150px;
@@ -71,40 +73,27 @@ const Home = () => {
           height: 800px;
           width: 100%;
           color: #505a70;
-          background-color: #121212;
           padding-top: auto;
         }
         .experience {
           height: 800px;
           width: 100%;
-          // color: #505a70;
           color: #121212;
-          background-color: #1e1e1e;
-          //eceeef 273f56
         }        
         
         h5 {
           color: #A2CEE0;
         }
 
-        // .about {
-        //   font-famiy: Poppins Light, Fira Sans, sans-serif;          
-        // }
-       
         .kern {
           color: #0379ec;
           font-size: 50px;
-          // font-famiy: Poppins Light, Fira Sans, sans-serif;
         }
 
-        title {
-          font-family: Poppins
-        }
         .projects {
           height: 800px;
           width: 100%;
           color: #505a70;
-          background-color: #273f56;
         }
 
         

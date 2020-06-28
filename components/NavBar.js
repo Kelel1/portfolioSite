@@ -27,7 +27,8 @@ const NavBar = () => {
           <style jsx>{`
             .navbar {
               background-color: #121212;
-              height: 1 em
+              height: 21 px;        
+              box-shadow: 0 5px 2px -2px rgba(0,0,0,.2)
             }
       
           `}</style>
