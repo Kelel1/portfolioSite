@@ -5,24 +5,33 @@ const Button = styled.button `
   color: white;
   cursor: pointer;
   padding: 5px 15px;
-  border-radius: 5px;
-  border: none;
+  // border-radius: 5px;
+  // border: none;
   border-color: #1e1e1e;
   outline: none;
   box-shadow: none;
+`
+const NavLink = styled.p`
+  background-color: #1e1e1e;
+  color: white;
+  cursor: pointer;
+  padding: 5px 15px;
+  // border-radius: 5px;
+  // border: none;
+
 `
 
 const NavBar = () => (
   <header className="navigation">
     <nav className="nav-bar">
       <div></div>
-      <div><Button href="/">Kern Elder</Button></div>
+      <div><NavLink href="/">Kern Elder</NavLink></div>
       <div className="space"></div>
       <div className="nav-items">
         <ul>
-          <li><Button>Projects</Button></li>
-          <li><Button>Skillset</Button></li>
-          <li><Button>Contact</Button></li>
+          <li><NavLink>Projects</NavLink></li>
+          <li><NavLink>Skillset</NavLink></li>
+          <li><NavLink>Contact</NavLink></li>
         </ul>
       </div>
     </nav> 
