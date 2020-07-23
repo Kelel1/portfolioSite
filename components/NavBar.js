@@ -1,16 +1,28 @@
-import Button   from 'react-bootstrap/Button'
+import styled from 'styled-components';
+
+const Button = styled.button `
+  background-color: #1e1e1e;
+  color: white;
+  cursor: pointer;
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: none;
+  border-color: #1e1e1e;
+  outline: none;
+  box-shadow: none;
+`
 
 const NavBar = () => (
   <header className="navigation">
     <nav className="nav-bar">
       <div></div>
-      <div className="nav-bar-logo"><Button href="/">Kern Elder</Button></div>
+      <div><Button href="/">Kern Elder</Button></div>
       <div className="space"></div>
       <div className="nav-items">
         <ul>
-          <li><button className="projects">Projects</button></li>
-          <li><p>Skillset</p></li>
-          <li><p>Contact</p></li>
+          <li><Button>Projects</Button></li>
+          <li><Button>Skillset</Button></li>
+          <li><Button>Contact</Button></li>
         </ul>
       </div>
     </nav> 

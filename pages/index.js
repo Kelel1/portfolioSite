@@ -16,7 +16,6 @@ export default function Home() {
           Kern Elder          
         </h2>
         <Hero/>
-        <Button className="btn btn-primary">Success</Button>{' '}
         <h1>Projects</h1>
         <Projects/>
       </main>
