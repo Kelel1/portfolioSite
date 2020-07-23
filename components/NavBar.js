@@ -18,7 +18,7 @@ const NavLink = styled.p`
   padding: 5px 5px 0 5px;
   text-transform: uppercase;
   &: hover {
-    border-bottom: 2px solid lightblue;
+    border-bottom: 2px solid skyblue;
   }
 
 `
