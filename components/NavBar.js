@@ -4,9 +4,7 @@ const Button = styled.button `
   background-color: #1e1e1e;
   color: white;
   cursor: pointer;
-  padding: 5px 15px;
-  // border-radius: 5px;
-  // border: none;
+  padding: 5px 15px;  
   border-color: #1e1e1e;
   outline: none;
   box-shadow: none;
@@ -15,9 +13,13 @@ const NavLink = styled.p`
   background-color: #1e1e1e;
   color: white;
   cursor: pointer;
-  padding: 5px 15px;
-  // border-radius: 5px;
-  // border: none;
+  margin-top: 10px;
+  margin-bottom: 0;
+  padding: 5px 5px 0 5px;
+  text-transform: uppercase;
+  &: hover {
+    border-bottom: 2px solid lightblue;
+  }
 
 `
 
@@ -31,6 +33,8 @@ const NavBar = () => (
         <ul>
           <li><NavLink>Projects</NavLink></li>
           <li><NavLink>Skillset</NavLink></li>
+          <li><NavLink>About</NavLink></li>
+          <li><NavLink>Blog</NavLink></li>
           <li><NavLink>Contact</NavLink></li>
         </ul>
       </div>
@@ -72,7 +76,7 @@ const NavBar = () => (
       .navigation {
         width: 100%;
         background: #1e1e1e;
-        height: 60px;
+        height: 40px;
         position: fixed;
       }
       .space {
