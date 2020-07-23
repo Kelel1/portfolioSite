@@ -1,4 +1,5 @@
 import Head     from 'next/head'
+import Hero     from '../components/Hero'
 import Button   from 'react-bootstrap/Button'
 import NavBar   from '../components/NavBar'
 import Projects from '../components/Projects'
@@ -14,7 +15,9 @@ export default function Home() {
         <h2 className="title">
           Kern Elder          
         </h2>
+        <Hero/>
         <Button className="btn btn-primary">Success</Button>{' '}
+        <h1>Projects</h1>
         <Projects/>
       </main>
 

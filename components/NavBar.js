@@ -1,31 +1,31 @@
-
+import Button   from 'react-bootstrap/Button'
 
 const NavBar = () => (
   <header className="navigation">
     <nav className="nav-bar">
       <div></div>
-      <div className="nav-bar-logo"><a href="/">Kern Elder</a></div>
+      <div className="nav-bar-logo"><Button href="/">Kern Elder</Button></div>
       <div className="space"></div>
       <div className="nav-items">
         <ul>
-          <li><a href="/">Skills</a></li>
-          <li><a href="/">Projects</a></li>
-          <li><a href="/">Contact</a></li>
+          <li><button className="projects">Projects</button></li>
+          <li><p>Skillset</p></li>
+          <li><p>Contact</p></li>
         </ul>
       </div>
-    </nav>
-  
+    </nav> 
 
     <style jsx>{`
       .nav-bar {
         display: flex;
         height: 100%;
         align-items: center;
-        box-shadow: 0 5px 2px -2px rgba(0,0,0,.2)
+        box-shadow: 0 5px 2px -2px rgba(0, 0, 0, .3);
       }
       .nav-bar-logo a {
         text-decoration: none;
         font-family: Poppins, sans-serif, Arial, Helvetica;
+        margin-left: 1rem;
         color: white;
       }
       .nav-items a:hover,
@@ -50,11 +50,15 @@ const NavBar = () => (
       }
       .navigation {
         width: 100%;
-        background: #6415ff;
+        background: #1e1e1e;
         height: 60px;
+        position: fixed;
       }
       .space {
         flex: 1;
+      }
+      .btn {
+        background-color: #1e1e1e;
       }
     
     `}</style>      
