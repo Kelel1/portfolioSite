@@ -1,6 +1,6 @@
 const Contact = () => (
     <>
-      <p className="contact">Contact me</p>
+      <p id="contact" className="contact">Contact me</p>
     <style jsx>{`
       .contact {
         font-size: 35px;

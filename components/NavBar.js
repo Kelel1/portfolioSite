@@ -31,10 +31,10 @@ const NavBar = () => (
       <div className="space"></div>
       <div className="nav-items">
         <ul>
-          <li><NavLink>Projects</NavLink></li>
+          <li><NavLink href="#projects">Projects</NavLink></li>
           <li><NavLink>Skillset</NavLink></li>
           <li><NavLink>About</NavLink></li>
-          <li><NavLink>Blog</NavLink></li>
+          <li><NavLink href="#blog">Blog</NavLink></li>
           <li><NavLink>Contact</NavLink></li>
         </ul>
       </div>

@@ -1,6 +1,7 @@
 import Head     from 'next/head';
 import Hero     from '../components/Hero';
 import Blog     from '../components/Blog';
+import Skills   from '../components/Skills';
 import Footer   from '../components/Footer';
 import NavBar   from '../components/NavBar';
 import Projects from '../components/Projects';
@@ -11,13 +12,12 @@ export default function Home() {
     <div>
       <Head>
         <title>Kern Elder</title>  
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <main>
-        <NavBar/>
-        {/* <h2 className="title">
-          Kern Elder          
-        </h2> */}
+        <NavBar/>        
         <Hero/>
+        <Skills/>
         <Projects/>
         <About/>
         <Blog/>

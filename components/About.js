@@ -1,6 +1,6 @@
 const About = () => (
     <>
-      <p className="about">
+      <p id="about" className="about">
         About Me  
       </p>  
       <style jsx>{`

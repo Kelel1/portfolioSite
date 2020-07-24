@@ -10,45 +10,60 @@ const cardStyle = {
 
 const Projects = () => (  
   <>
-    <p className="projects">
+    <p id="projects" className="projects">
       Projects
     </p>
     <CardDeck>
-      <Card style={ cardStyle }>
-        <Card.Img variant="top" src={require('../images/resumeExample.png')} />
-        <Card.Body>
-          <Card.Text>
-            Some quick example text to build on the card title and make up the bulk
-            of the card's content.
-          </Card.Text>
-          <Button className="btn btn-primary">Success</Button>{' '}
-        </Card.Body>
-      </Card>  
-      <Card style={ cardStyle }>
-        <Card.Img variant="top" src={require('../images/resumeExample.png')} />
-        <Card.Body>
-          <Card.Text>
-            Some quick example text to build on the card title and make up the bulk
-            of the card's content.
-          </Card.Text>
-          <Button className="btn btn-primary">Success</Button>{' '}
-        </Card.Body>
-      </Card>    
-      <Card style={ cardStyle }>
-        <Card.Img variant="top" src={require('../images/resumeExample.png')} />
-        <Card.Body>
-          <Card.Text>
-            Some quick example text to build on the card title and make up the bulk
-            of the card's content.
-          </Card.Text>
-          <Button className="btn btn-primary">Success</Button>{' '}
-        </Card.Body>
-      </Card>        
+      <div className="container">
+        <Card style={{ cardStyle, width: '15rem' }}>
+          <Card.Img variant="top" src={require('../images/resumeExample.png')} />
+          <Card.Body>
+            <Card.Text>
+              Some quick example text to build on the card title
+            </Card.Text>
+            <Button className="btn btn-primary">Success</Button>{' '}
+          </Card.Body>
+        </Card>  
+        <Card style={{ cardStyle, width: '15rem' }}>
+          <Card.Img variant="top" src={require('../images/resumeExample.png')} />
+          <Card.Body>
+            <Card.Text>
+              Some quick example text to build on the card title
+            </Card.Text>
+            <Button className="btn btn-primary">Success</Button>{' '}
+          </Card.Body>
+        </Card>    
+        <Card style={{ cardStyle, width: '15rem' }}>
+          <Card.Img variant="top" src={require('../images/resumeExample.png')} />
+          <Card.Body>
+            <Card.Text>
+              Some quick example text to build on the card title
+            </Card.Text>
+            <Button className="btn btn-primary">Success</Button>{' '}
+          </Card.Body>
+        </Card>  
+        <Card style={{ cardStyle, width: '15rem' }}>
+          <Card.Img variant="top" src={require('../images/resumeExample.png')} />
+          <Card.Body>
+            <Card.Text>
+              Some quick example text to build on the card title
+            </Card.Text>
+            <Button className="btn btn-primary">Success</Button>{' '}
+          </Card.Body>
+        </Card>        
+      </div>  
     </CardDeck>  
     <style jsx>{`
       .projects {
         font-size: 35px;
         color: skyblue;
+      }
+      .container {
+        margin: auto;
+        display: grid;
+        width: 100%;
+        grid-template-columns: auto auto auto auto;
+
       }
     `}</style>
   </>

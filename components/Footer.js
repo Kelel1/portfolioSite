@@ -1,6 +1,6 @@
 const Footer = () => (
     <>
-    <style jsx>{``}</style>
+      <style jsx>{``}</style>
     </>
 )
 

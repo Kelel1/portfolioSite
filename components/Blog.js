@@ -1,6 +1,6 @@
 const Blog = () => (
     <>
-      <p className="blog">
+      <p id="blog" className="blog">
           Blog
       </p>
       <style jsx>{`
