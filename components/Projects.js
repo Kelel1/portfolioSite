@@ -8,51 +8,50 @@ const cardStyle = {
   marginLeft: '2rem'
 }
 
-const Projects = () => (
+const Projects = () => (  
   <>
-  <CardDeck>
-    <Card style={ cardStyle }>
-      <Card.Img variant="top" src={require('../images/resumeExample.png')} />
-      <Card.Body>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the bulk
-          of the card's content.
-        </Card.Text>
-        <Button className="btn btn-primary">Success</Button>{' '}
-      </Card.Body>
-    </Card>  
-    <Card style={ cardStyle }>
-      <Card.Img variant="top" src={require('../images/resumeExample.png')} />
-      <Card.Body>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the bulk
-          of the card's content.
-        </Card.Text>
-        <Button className="btn btn-primary">Success</Button>{' '}
-      </Card.Body>
-    </Card>    
-    <Card style={ cardStyle }>
-      <Card.Img variant="top" src={require('../images/resumeExample.png')} />
-      <Card.Body>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the bulk
-          of the card's content.
-        </Card.Text>
-        <Button className="btn btn-primary">Success</Button>{' '}
-      </Card.Body>
-    </Card>  
-    <Card style={ cardStyle }>
-      <Card.Img variant="top" src={require('../images/resumeExample.png')} />
-      <Card.Body>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the bulk
-          of the card's content.
-        </Card.Text>
-        <Button className="btn btn-primary">Success</Button>{' '}
-      </Card.Body>
-    </Card>  
-  </CardDeck>  
-</>
-)
+    <p className="projects">
+      Projects
+    </p>
+    <CardDeck>
+      <Card style={ cardStyle }>
+        <Card.Img variant="top" src={require('../images/resumeExample.png')} />
+        <Card.Body>
+          <Card.Text>
+            Some quick example text to build on the card title and make up the bulk
+            of the card's content.
+          </Card.Text>
+          <Button className="btn btn-primary">Success</Button>{' '}
+        </Card.Body>
+      </Card>  
+      <Card style={ cardStyle }>
+        <Card.Img variant="top" src={require('../images/resumeExample.png')} />
+        <Card.Body>
+          <Card.Text>
+            Some quick example text to build on the card title and make up the bulk
+            of the card's content.
+          </Card.Text>
+          <Button className="btn btn-primary">Success</Button>{' '}
+        </Card.Body>
+      </Card>    
+      <Card style={ cardStyle }>
+        <Card.Img variant="top" src={require('../images/resumeExample.png')} />
+        <Card.Body>
+          <Card.Text>
+            Some quick example text to build on the card title and make up the bulk
+            of the card's content.
+          </Card.Text>
+          <Button className="btn btn-primary">Success</Button>{' '}
+        </Card.Body>
+      </Card>        
+    </CardDeck>  
+    <style jsx>{`
+      .projects {
+        font-size: 35px;
+        color: skyblue;
+      }
+    `}</style>
+  </>
+);
 
 export default Projects

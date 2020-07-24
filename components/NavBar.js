@@ -78,6 +78,7 @@ const NavBar = () => (
         background: #1e1e1e;
         height: 40px;
         position: fixed;
+        top: 0;
       }
       .space {
         flex: 1;
@@ -85,7 +86,7 @@ const NavBar = () => (
       .btn {
         background-color: #1e1e1e;
       }
-    
+         
     `}</style>      
   </header>
 )

@@ -1,8 +1,10 @@
-import Head     from 'next/head'
-import Hero     from '../components/Hero'
-import Button   from 'react-bootstrap/Button'
-import NavBar   from '../components/NavBar'
-import Projects from '../components/Projects'
+import Head     from 'next/head';
+import Hero     from '../components/Hero';
+import Blog     from '../components/Blog';
+import Footer   from '../components/Footer';
+import NavBar   from '../components/NavBar';
+import Projects from '../components/Projects';
+import About    from '../components/About';
 
 export default function Home() {
   return (
@@ -12,18 +14,15 @@ export default function Home() {
       </Head>
       <main>
         <NavBar/>
-        <h2 className="title">
+        {/* <h2 className="title">
           Kern Elder          
-        </h2>
+        </h2> */}
         <Hero/>
-        <h1>Projects</h1>
         <Projects/>
+        <About/>
+        <Blog/>
+        <Footer/>
       </main>
-
-      <footer>
-        
-      </footer>
-
       <style jsx>{`
       `}</style>
 
