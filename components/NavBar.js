@@ -10,7 +10,7 @@ const Button = styled.button `
   box-shadow: none;
 `
 const NavLink = styled.p`
-  background-color: #1e1e1e;
+  background-color: #1b1d23;
   color: white;
   cursor: pointer;
   margin-top: 10px;
@@ -75,7 +75,7 @@ const NavBar = () => (
       }
       .navigation {
         width: 100%;
-        background: #1e1e1e;
+        background: #1b1d23;
         height: 40px;
         position: fixed;
         top: 0;
@@ -84,7 +84,7 @@ const NavBar = () => (
         flex: 1;
       }
       .btn {
-        background-color: #1e1e1e;
+        background-color: #1b1d23;
       }
          
     `}</style>      

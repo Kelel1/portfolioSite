@@ -32,7 +32,7 @@ export default function Home() {
         html,
         body {
           padding: 0;
-          background-color: #121212;
+          background-color: #1b1d23;
           margin: 0;
           width: 100%;
           font-family: Poppins, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
