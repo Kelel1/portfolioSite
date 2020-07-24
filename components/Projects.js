@@ -2,8 +2,7 @@ import { Card, CardDeck }    from 'react-bootstrap'
 import Button   from 'react-bootstrap/Button'
 
 const cardStyle = {
-  width: '18rem',
-  boxShadow: '2px 2px 2px 2px rgba(255,0,255,0.3)', 
+  width: '15rem',
   color: '#121212',
   marginLeft: '2rem'
 }
@@ -13,9 +12,9 @@ const Projects = () => (
     <p id="projects" className="projects">
       Projects
     </p>
-    <CardDeck>
+    <CardDeck style={{ width: '100%' }}>
       <div className="container">
-        <Card style={{ cardStyle, width: '15rem' }}>
+        <Card style={{ cardStyle }}>
           <Card.Img variant="top" src={require('../images/resumeExample.png')} />
           <Card.Body>
             <Card.Text>
@@ -24,7 +23,7 @@ const Projects = () => (
             <Button className="btn btn-primary">Success</Button>{' '}
           </Card.Body>
         </Card>  
-        <Card style={{ cardStyle, width: '15rem' }}>
+        <Card style={{ cardStyle }}>
           <Card.Img variant="top" src={require('../images/resumeExample.png')} />
           <Card.Body>
             <Card.Text>
@@ -33,7 +32,7 @@ const Projects = () => (
             <Button className="btn btn-primary">Success</Button>{' '}
           </Card.Body>
         </Card>    
-        <Card style={{ cardStyle, width: '15rem' }}>
+        <Card style={{ cardStyle }}>
           <Card.Img variant="top" src={require('../images/resumeExample.png')} />
           <Card.Body>
             <Card.Text>
@@ -42,7 +41,7 @@ const Projects = () => (
             <Button className="btn btn-primary">Success</Button>{' '}
           </Card.Body>
         </Card>  
-        <Card style={{ cardStyle, width: '15rem' }}>
+        <Card style={{ cardStyle }}>
           <Card.Img variant="top" src={require('../images/resumeExample.png')} />
           <Card.Body>
             <Card.Text>
@@ -59,9 +58,7 @@ const Projects = () => (
         color: skyblue;
       }
       .container {
-        margin: auto;
         display: grid;
-        width: 100%;
         grid-template-columns: auto auto auto auto;
 
       }

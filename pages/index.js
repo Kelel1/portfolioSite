@@ -2,6 +2,7 @@ import Head     from 'next/head';
 import Hero     from '../components/Hero';
 import Blog     from '../components/Blog';
 import Skills   from '../components/Skills';
+import Contact  from '../components/Contact';
 import Footer   from '../components/Footer';
 import NavBar   from '../components/NavBar';
 import Projects from '../components/Projects';
@@ -21,6 +22,7 @@ export default function Home() {
         <Projects/>
         <About/>
         <Blog/>
+        <Contact/>
         <Footer/>
       </main>
       <style jsx>{`
@@ -32,6 +34,7 @@ export default function Home() {
           padding: 0;
           background-color: #121212;
           margin: 0;
+          width: 100%;
           font-family: Poppins, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
             Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
             sans-serif;
