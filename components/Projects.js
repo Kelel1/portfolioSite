@@ -15,7 +15,7 @@ const Projects = () => (
     <CardDeck style={{ width: '100%' }}>
       <div className="container">
         <Card style={{ cardStyle }}>
-          <Card.Img variant="top" src={require('../images/resumeExample.png')} />
+          <Card.Img variant="top" />
           <Card.Body>
             <Card.Text>
               Some quick example text to build on the card title
@@ -24,7 +24,7 @@ const Projects = () => (
           </Card.Body>
         </Card>  
         <Card style={{ cardStyle }}>
-          <Card.Img variant="top" src={require('../images/resumeExample.png')} />
+          <Card.Img variant="top" />
           <Card.Body>
             <Card.Text>
               Some quick example text to build on the card title
@@ -33,7 +33,7 @@ const Projects = () => (
           </Card.Body>
         </Card>    
         <Card style={{ cardStyle }}>
-          <Card.Img variant="top" src={require('../images/resumeExample.png')} />
+          <Card.Img variant="top"  />
           <Card.Body>
             <Card.Text>
               Some quick example text to build on the card title
@@ -42,7 +42,7 @@ const Projects = () => (
           </Card.Body>
         </Card>  
         <Card style={{ cardStyle }}>
-          <Card.Img variant="top" src={require('../images/resumeExample.png')} />
+          <Card.Img variant="top"  />
           <Card.Body>
             <Card.Text>
               Some quick example text to build on the card title
