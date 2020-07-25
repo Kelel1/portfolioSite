@@ -1,6 +1,8 @@
-const withImages = require('next-images');
-const withMDX = require('@next/mdx')();
-module.exports = withImages();
-module.exports = withMDX({
-  pageExtensions: ['js', 'jsx', 'md', 'mdx']
-})
+const withImages = require('next-images')
+const withMDX = require('@next/mdx')({
+    extension: /\.mdx?$/,
+  })
+  module.exports = withMDX({
+    pageExtensions: ['js', 'jsx', 'mdx'],
+  })
+module.exports = withImages()
