@@ -4,7 +4,8 @@ import Button   from 'react-bootstrap/Button'
 const cardStyle = {
   width: '15rem',
   color: '#121212',
-  marginLeft: '2rem'
+  marginLeft: '2rem',
+  height: '10rem'
 }
 
 const Projects = () => (  
@@ -57,11 +58,7 @@ const Projects = () => (
         font-size: 35px;
         color: skyblue;
       }
-      .container {
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-
-      }
+      
     `}</style>
   </>
 );

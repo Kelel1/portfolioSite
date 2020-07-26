@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Container, Row, Col} from 'react-bootstrap';
 
 const Button = styled.button `
   background-color: #1e1e1e;
@@ -26,23 +27,26 @@ const NavLink = styled.p`
 const NavBar = () => (
   <header className="navigation">
     <nav className="nav-bar">
-      <div></div>
-      <div><NavLink href="/">Kern Elder</NavLink></div>
-      <div className="space"></div>
       <div className="nav-items">
-        <ul>
-          <li><NavLink href="#projects">Projects</NavLink></li>
-          <li><NavLink>Skillset</NavLink></li>
-          <li><NavLink>About</NavLink></li>
-          <li><NavLink href="#blog">Blog</NavLink></li>
-          <li><NavLink>Contact</NavLink></li>
-        </ul>
+        <Container fluid>
+          <Row>
+            <ul>
+              <Col md="auto"><li><NavLink href="/">Kern Elder</NavLink></li></Col>     
+              <Col xs={12}></Col>            
+              <Col md="auto"><li><NavLink href="#projects">Projects</NavLink></li></Col>
+              <Col md="auto"><li><NavLink>Skillset</NavLink></li></Col>
+              <Col md="auto"><li><NavLink>About</NavLink></li></Col>
+              <Col md="auto"><li><NavLink href="#blog">Blog</NavLink></li></Col>          
+              <Col md="auto"><li><NavLink>Contact</NavLink></li></Col>          
+            </ul>
+          </Row>
+        </Container>
       </div>
     </nav> 
 
     <style jsx>{`
-      .nav-bar {
-        display: flex;
+      .navigation {
+        display: grid;
         height: 100%;
         align-items: center;
         box-shadow: 0 5px 2px -2px rgba(0, 0, 0, .3);
@@ -69,10 +73,7 @@ const NavBar = () => (
         margin: 0;
         padding: 0;
         display: flex;
-      }
-      .nav-items li {
-        padding: 0 0.5rem;
-      }
+      }           
       .navigation {
         width: 100%;
         background: #1b1d23;
@@ -81,7 +82,7 @@ const NavBar = () => (
         top: 0;
       }
       .space {
-        flex: 1;
+        
       }
       .btn {
         background-color: #1b1d23;
