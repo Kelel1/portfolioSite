@@ -80,6 +80,7 @@ const NavBar = () => (
         height: 40px;
         position: fixed;
         top: 0;
+        z-index: 5;
       }
       .space {
         
