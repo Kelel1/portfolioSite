@@ -32,7 +32,7 @@ const NavBar = () => (
           <Row>
             <ul>
               <Col md="auto"><li><NavLink href="/">Kern Elder</NavLink></li></Col>     
-              <Col xs={12}></Col>            
+              <Col xs={11}></Col>            
               <Col md="auto"><li><NavLink href="#projects">Projects</NavLink></li></Col>
               <Col md="auto"><li><NavLink>Skillset</NavLink></li></Col>
               <Col md="auto"><li><NavLink>About</NavLink></li></Col>

@@ -1,6 +1,8 @@
-import { Card, CardDeck }    from 'react-bootstrap'
-import Button   from 'react-bootstrap/Button'
-
+import Button   from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
+import Card from './Card';
 const cardStyle = {
   width: '15rem',
   color: '#121212',
@@ -13,51 +15,20 @@ const Projects = () => (
     <p id="projects" className="projects">
       Projects
     </p>
-    <CardDeck style={{ width: '100%' }}>
-      <div className="container">
-        <Card style={{ cardStyle }}>
-          <Card.Img variant="top" />
-          <Card.Body>
-            <Card.Text>
-              Some quick example text to build on the card title
-            </Card.Text>
-            <Button className="btn btn-primary">Success</Button>{' '}
-          </Card.Body>
-        </Card>  
-        <Card style={{ cardStyle }}>
-          <Card.Img variant="top" />
-          <Card.Body>
-            <Card.Text>
-              Some quick example text to build on the card title
-            </Card.Text>
-            <Button className="btn btn-primary">Success</Button>{' '}
-          </Card.Body>
-        </Card>    
-        <Card style={{ cardStyle }}>
-          <Card.Img variant="top"  />
-          <Card.Body>
-            <Card.Text>
-              Some quick example text to build on the card title
-            </Card.Text>
-            <Button className="btn btn-primary">Success</Button>{' '}
-          </Card.Body>
-        </Card>  
-        <Card style={{ cardStyle }}>
-          <Card.Img variant="top"  />
-          <Card.Body>
-            <Card.Text>
-              Some quick example text to build on the card title
-            </Card.Text>
-            <Button className="btn btn-primary">Success</Button>{' '}
-          </Card.Body>
-        </Card>        
-      </div>  
-    </CardDeck>  
-    <style jsx>{`
-      .projects {
-        font-size: 35px;
-        color: skyblue;
+    
+    <Container>
+      <Row>
+        <Col className="one"><Card/></Col>
+        <Col className="two"><Card/></Col>
+        <Col className="three"><Card/></Col>
+      </Row>
+    </Container>
+    <style jsx>{`      
+      .one {
+        color: yellow;
+        background: blue;
       }
+      
       
     `}</style>
   </>

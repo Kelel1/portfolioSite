@@ -5,7 +5,7 @@ const About = () => (
       </p>  
       <p className="summary">
 
-        I'm a self taught fullstack web-devloper and life-long learner.  
+        I'm a fullstack web-devloper, specializing with react on the frontend and NodeJS/Express on the backend.  
         The field I am most interested in is at Artificial Intelligence,
         and I hope to go back to school to evetually get a masters in that 
         field.  Currently seeking on-site or remote entry developer positions.
