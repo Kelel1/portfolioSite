@@ -1,8 +1,7 @@
 import Button   from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
+import { Container, Row, Col, Image } from 'react-bootstrap/';
 import Card from './Card';
+// import res from '../public/res.png';
 const cardStyle = {
   width: '15rem',
   color: '#121212',
@@ -18,15 +17,22 @@ const Projects = () => (
     
     <Container>
       <Row>
-        <Col className="one"><Card/></Col>
-        <Col className="two"><Card/></Col>
-        <Col className="three"><Card/></Col>
+        <Col md={4}><Card/></Col>
+        <Col md={4}><Card/></Col>
+        <Col md={4}><Card/></Col>
       </Row>
     </Container>
     <style jsx>{`      
       .one {
         color: yellow;
         background: blue;
+      }
+      .projects {
+        font-size: 35px;
+        font: Poppins
+        height: 30%;
+        width: 100%;
+        color: skyblue;
       }
       
       
