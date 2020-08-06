@@ -1,12 +1,13 @@
 const Blog = () => (
     <>
-      <p id="blog" className="blog">
+      <p className="blog">
           Blog
       </p>
       <style jsx>{`
         .blog {
           font-size: 35px;
           color: skyblue;
+          padding: 1em;
         }                  
       `}</style>
     </>

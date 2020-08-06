@@ -1,107 +1,78 @@
-import React, { useState } from 'react';
+import styled from 'styled-components';
 
-const handleResponse = (status, msg) => {
-  if (status === 200) {
-    setStatus({
-      submitted: true,
-      submitting: false,
-      info: { error: false, msg: msg }
-    })
-    setInputs({
-      email: '',
-      message: ''
-    })
-  } else {
-    setStatus({
-      info: { error: true, msg: msg }
-    })
-  }
-}
-
-const handleOnChange = e => {
-  e.persist()
-  setInputs(prev => ({
-    ...prev,
-    [e.target.id]: e.target.value
-  }))
-  setStatus({
-    submitted: false,
-    submitting: false,
-    info: { error: false, msg: null }
-  })
-}
-
-const handleOnSubmit = async e => {
-  e.preventDefault()
-  setStatus(prevStatus => ({ ...prevStatus, submitting: true }))
-  const res = await fetch('/api/send', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(inputs)
-  })
-  const text = await res.text()
-  handleResponse(res.status, text)
-}
-const Contact = () => {
-
-  const [status, setStatus] = useState({
-    submitted: false,
-    submitting: false,
-    info: { error: false, msg: null }
-  })
-  
-  const [inputs, setInputs] = useState({
-    email: '',
-    message: ''
-  })
-
-  return (
-
+const Button = styled.button`
+  background-color: indigo;
+  color: white;
+  padding 5px 15px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  border: none;
+  outline: 0;
+`;
+const Contact = () => (
     <>
-      <p id="contact" className="contact">Contact me</p>
+      <p className="contact">Contact me</p>
       <main>
-      <form onSubmit={handleOnSubmit}>
-        <label htmlFor="email">Email</label>
-        <input
-          id="email"
-          type="email"
-          onChange={handleOnChange}
-          required
-          value={inputs.email}
-        />
-        <label htmlFor="message">Message</label>
-        <textarea
-          id="message"
-          onChange={handleOnChange}
-          required
-          value={inputs.message}
-        />
-        <button type="submit" disabled={status.submitting}>
-          {!status.submitting
-            ? !status.submitted
-              ? 'Submit'
-              : 'Submitted'
-            : 'Submitting...'}
-        </button>
-      </form>
-      {status.info.error && (
-        <div className="error">Error: {status.info.msg}</div>
-      )}
-      {!status.info.error && status.info.msg && (
-        <div className="success">{status.info.msg}</div>
-      )}
+        <form className="form" name="contact" method="POST">
+          <input type="hidden" name="form-name" value="contact" />
+      <p>
+        <label htmlFor="yourname">
+          Your Name:
+        </label> <br />
+        <input className="name" type="text" name="firstname" id="firstname" />
+          
+      </p>
+      <p>
+        <label htmlFor="youremail">
+          Your Email:
+        </label> <br />
+        <input className="email" type="email" name="email" id="youremail" />
+      </p>
+      <p>
+        <label htmlFor="yourmessage">
+          Message:
+        </label> <br />
+        <textarea className="message" name="message" id="yourmessage"></textarea>
+      </p>
+      <p>
+        <Button type="submit">Send</Button>
+      </p>
+    </form>
     </main>
       
     <style jsx>{`
       .contact {
+        padding: 1em;
         font-size: 35px;
         color: skyblue;
       }
+      .form {
+        padding: 1em;
+      }
+      .message {
+        color: black;
+        background-color: skyblue;
+        border-radius: 5px;
+        outline: 0;
+        border: none;
+      }
+      .name {
+        color: black;
+        background-color: skyblue;
+        border-radius: 5px;
+        outline: 0;
+        border: none;
+      }
+      .email {
+        color: black;
+        background-color: skyblue;
+        border-radius: 5px;
+        outline: 0;
+        border: none;
+      }
     `}</style>
     </>
-  )
-}
+  
+)
 
 export default Contact;

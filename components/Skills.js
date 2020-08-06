@@ -1,8 +1,9 @@
 const Skills = () => (
     <>
-      <p id="skills" className="skills">Skillset</p>
+      <p className="skills">Skillset</p>
     <style jsx>{`
       .skills {
+        padding: 1em;
         font-size: 35px;
         color: skyblue;
       }

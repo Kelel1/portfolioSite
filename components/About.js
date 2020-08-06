@@ -1,6 +1,6 @@
 const About = () => (
     <>
-      <p id="about" className="about">
+      <p className="about">
         About Me  
       </p>  
       <p className="summary">
@@ -17,6 +17,7 @@ const About = () => (
       <style jsx>{`
         .about {
           font-size: 35px;
+          padding: 1em;
           font: Poppins
           height: 30%;
           width: 100%;
@@ -24,6 +25,7 @@ const About = () => (
         }
         .summary {
           color: white;
+          padding: 1em;
         }
       `}</style>  
     </>

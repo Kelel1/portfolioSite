@@ -28,6 +28,7 @@ const Projects = () => (
         background: blue;
       }
       .projects {
+        padding: 1em;
         font-size: 35px;
         font: Poppins
         height: 30%;
