@@ -6,6 +6,7 @@ const Card = () => (
       height: 100%;
       width:100%;
       background: #3e3e66;
+      box-shadow: 0 5px 2px -2px rgba(0, 0, 0, .3);
     }
   
   `}</style>

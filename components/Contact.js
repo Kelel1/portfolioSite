@@ -53,6 +53,7 @@ const Contact = () => (
         border-radius: 5px;
         outline: 0;
         border: none;
+        box-shadow: 0 5px 2px -2px rgba(0, 0, 0, .3);
       }
       .name {
         color: black;
@@ -60,6 +61,7 @@ const Contact = () => (
         border-radius: 5px;
         outline: 0;
         border: none;
+        box-shadow: 0 5px 2px -2px rgba(0, 0, 0, .3);
       }
       .email {
         color: black;
@@ -67,6 +69,7 @@ const Contact = () => (
         border-radius: 5px;
         outline: 0;
         border: none;
+        box-shadow: 0 5px 2px -2px rgba(0, 0, 0, .3);
       }
     `}</style>
     </>
