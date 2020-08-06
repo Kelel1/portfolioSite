@@ -1,14 +1,3 @@
-import styled from 'styled-components';
-
-const Button = styled.button`
-  background-color: indigo;
-  color: white;
-  padding 5px 15px;
-  border-radius: 5px;
-  text-transform: uppercase;
-  border: none;
-  outline: 0;
-`;
 const Contact = () => (
     <>
       <p className="contact">Contact me</p>
@@ -35,7 +24,7 @@ const Contact = () => (
         <textarea className="message" name="message" id="yourmessage"></textarea>
       </p>
       <p>
-        <Button type="submit">Send</Button>
+        <button className="send" type="submit">Send</button>
       </p>
     </form>
     </main>
@@ -45,6 +34,15 @@ const Contact = () => (
         padding: 1em;
         font-size: 35px;
         color: skyblue;
+      }
+      .send {
+        background-color: indigo;
+        color: white;
+        padding 5px 15px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        border: none;
+        outline: 0;
       }
       .form {
         padding: 1em;
