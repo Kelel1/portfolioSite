@@ -55,6 +55,8 @@ const Contact = () => (
         border: none;
         box-shadow: 0 5px 2px -2px rgba(0, 0, 0, .3);
         width: 321px;
+        height: 150px;
+        resize: none;
       }
       .name {
         color: black;
