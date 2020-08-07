@@ -1,7 +1,6 @@
 import Button   from 'react-bootstrap/Button';
-import { Container, Row, Col } from 'react-bootstrap/';
+import { Container, Row, Col, Image } from 'react-bootstrap/';
 import Card from './Card';
-// import res from '../public/res.png';
 const cardStyle = {
   width: '15rem',
   color: '#121212',
@@ -11,6 +10,8 @@ const cardStyle = {
 
 const Projects = () => (  
   <>
+    <Image style={{height: "50px", width: "50px", background: ""}} src="github.svg"></Image>
+    <Image style={{height: "50px", width: "50px", background: ""}} src="res.png"></Image>
     <p id="projects" className="projects">
       Projects
     </p>
@@ -34,7 +35,7 @@ const Projects = () => (
         height: 30%;
         width: 100%;
         color: skyblue;
-      }
+      }     
       
       
     `}</style>
