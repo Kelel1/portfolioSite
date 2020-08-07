@@ -1,5 +1,5 @@
 import Button   from 'react-bootstrap/Button';
-import { Container, Row, Col, Image } from 'react-bootstrap/';
+import { Container, Row, Col } from 'react-bootstrap/';
 import Card from './Card';
 // import res from '../public/res.png';
 const cardStyle = {

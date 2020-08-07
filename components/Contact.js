@@ -1,8 +1,14 @@
+import { Container, Row, Col, Image } from 'react-bootstrap/';
+
 const Contact = () => (
-    <>
+    <div className="contactForm">
       <p className="contact">Contact me</p>
-      <main>
-        <form className="form" name="contact" method="POST">
+      <Container>
+        <Row>
+          <Col></Col>
+          <Col>
+          <main>
+        <form className="form" name="contact" method="POST" data-netlify="true">
           <input type="hidden" name="form-name" value="contact" />
       <p>
         <label htmlFor="yourname">
@@ -27,13 +33,20 @@ const Contact = () => (
         <button className="send" type="submit">Send</button>
       </p>
     </form>
-    </main>
+    </main>          
+          </Col>
+          <Col></Col>          
+        </Row>      
+      </Container>
       
     <style jsx>{`
       .contact {
         padding: 1em;
         font-size: 35px;
         color: skyblue;
+      }
+      .contactForm {
+        
       }
       .send {
         background-color: indigo;
@@ -75,7 +88,7 @@ const Contact = () => (
         box-shadow: 0 5px 2px -2px rgba(0, 0, 0, .3);
       }
     `}</style>
-    </>
+    </div>
   
 )
 
