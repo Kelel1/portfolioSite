@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { Container, Row, Col} from 'react-bootstrap';
 
+
 const Button = styled.button `
   background-color: #1e1e1e;
   color: white;
