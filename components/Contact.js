@@ -5,7 +5,6 @@ const Contact = () => (
       <p className="contact">Contact me</p>
       <Container>
         <Row>
-          <Col></Col>
           <Col>
           <main>
         <form className="form" name="contact" method="POST" data-netlify="true">
@@ -35,7 +34,6 @@ const Contact = () => (
     </form>
     </main>          
           </Col>
-          <Col></Col>          
         </Row>      
       </Container>
       

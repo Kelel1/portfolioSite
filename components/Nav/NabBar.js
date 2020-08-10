@@ -49,7 +49,8 @@ const NavBar = () => (
         display: grid;
         height: 100%;
         align-items: center;
-        box-shadow: 0 5px 2px -2px rgba(0, 0, 0, .3);
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px 0px, rgba(0, 0, 0, 0.75) 0px 1px 1px 0px;
+        
       }
       .nav-bar-logo a {
         text-decoration: none;
