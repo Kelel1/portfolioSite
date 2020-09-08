@@ -9,12 +9,10 @@ const About = () => (
           The field I am most interested in is at Artificial Intelligence,
           and I hope to go back to school to evetually pursue a masters in this field.
           Currently seeking on-site or remote entry-level developer positions.
-        </span>
-        <span>
+       
           When not learning programming languages, I am actively trying to learn different
           spoken languages.  I studied 3 years of Japanese in highchool, and am currently
-          learning Spanish, with the goal of becoming fluent in these languages.
-          
+          learning Spanish, with the goal of becoming fluent in these languages.          
         </span> 
       </div>
       
@@ -29,7 +27,8 @@ const About = () => (
         }
         .summary {
           color: white;
-          padding: 1em;
+          padding: 5em;
+         
         }
       `}</style>  
     </>
