@@ -12,8 +12,7 @@ const Projects = () => (
   <>    
     <p id="projects" className="projects">
       Projects
-    </p>
-    
+    </p>    
     <Container>
       <Row>
         <Col md={4}><Card/></Col>

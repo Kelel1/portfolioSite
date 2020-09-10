@@ -10,25 +10,26 @@ const Skills = () => (
       </div>
       <Container>
       <Row>
-        <Col md={4}>
-        <ul className="frontend">
-            <div>Front-end</div>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>          
+        <Col md={6}>
+          <div className="title">
+            <ul className="frontend">
+              <div>Front-end</div>
+              <li>ReactJs</li>
+              <li>HTML/CSS/JS</li>
+              <li></li>
+            </ul>            
+          </div>          
         </Col>
-        <Col md={4}>
-          <ul className="backend">
-            <div>Back-end</div>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </Col>
-        <Col md={4}>
-          
-        </Col>
+        <Col md={6}>
+          <div className="title">
+            <ul className="backend">
+              <div >Back-end</div>
+              <li>NodeJS</li>
+              <li>GraphQL</li>
+              <li>Express</li>
+            </ul>
+          </div>          
+        </Col>       
       </Row>
     </Container>
     <style jsx>{`
@@ -40,8 +41,12 @@ const Skills = () => (
       .frontend {
         color: skyblue;
       }
-      .backent {
+      .backend {
         color: skyblue;
+      }
+      .title {
+        margin: 0 auto;
+        width: 50%;
       }
     `}</style>
     </>

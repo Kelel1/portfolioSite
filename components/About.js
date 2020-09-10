@@ -27,7 +27,7 @@ const About = () => (
         }
         .summary {
           color: white;
-          padding: 5em;
+          padding: 1em;
          
         }
       `}</style>  
